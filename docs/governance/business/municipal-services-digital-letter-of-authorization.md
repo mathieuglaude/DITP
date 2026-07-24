@@ -22,6 +22,7 @@ Acknowledgements: The development of this documentation follows the governance f
 | <b>0.9.4</b> | 15-Jun-2026 | Added 18th attribute `authorized_location_short_address` (short address, for OCA card display). Schema and credential-definition IDs stripped pending re-registration to the verifiable data registry. |
 | <b>0.9.5</b> | 16-Jun-2026 | Credential v1.1 (18 attributes) published to CANdy Dev; re-populated the Dev Schema ID (§5.3) and Credential Definition ID (§5.4) with the new ledger identifiers and candyscan links. |
 | <b>0.9.6</b> | 21-Jul-2026 | Credential v1.1 endorsed on CANdy Test; populated the Test Schema ID (§5.3) and Credential Definition ID (§5.4) with the ledger identifiers and candyscan links; linked the live Dev OCA Bundle in §5.4. |
+| <b>0.9.7</b> | 24-Jul-2026 | Credential v1.1 endorsed on CANdy Prod; populated the Production Schema ID (§5.3) and Credential Definition ID (§5.4) with the ledger identifiers and candyscan links; linked the Test and Production OCA Bundles in §5.4. |
 
 ### 1.2 Terminology and Notation
 
@@ -691,7 +692,7 @@ The Governing Authority of this Credential document attests that the following i
 
 | **Environment** | **Ledger** | **Schema ID** |
 | :--: | :--: | :--: |
-| CANdy Production | Municipal Services Digital Letter of Authorization | TBA |
+| CANdy Production | [Municipal Services Digital Letter of Authorization](https://candyscan.digitaltrust.gov.bc.ca/tx/CANDY_PROD/domain/8117) | <code>R12pguaP3VF2WiE6vAsiPF:2:Municipal Services Digital Letter of Authorization:1.1</code> |
 | CANdy Test | [Municipal Services Digital Letter of Authorization](https://candyscan.digitaltrust.gov.bc.ca/tx/CANDY_TEST/domain/1205) | <code>ARK5s3QZtjL5X65mLoubdk:2:Municipal Services Digital Letter of Authorization:1.1</code> |
 | CANdy Dev | [Municipal Services Digital Letter of Authorization](https://candyscan.digitaltrust.gov.bc.ca/tx/CANDY_DEV/domain/39764) | <code>YWnESLB4SH275SMNvaJJ1L:2:Municipal Services Digital Letter of Authorization:1.1</code> |
 
@@ -699,8 +700,8 @@ The Governing Authority of this Credential document attests that the following i
 
 | **Environment** | **Ledger** | **Credential Definition ID** | **OCA Bundle** |
 | :--: | :--: | :--: | :--: |
-| CANdy Production | Municipal Services Digital Letter of Authorization | TBA | TBA |
-| CANdy Test | [Municipal Services Digital Letter of Authorization](https://candyscan.digitaltrust.gov.bc.ca/tx/CANDY_TEST/domain/1207) | <code>ARK5s3QZtjL5X65mLoubdk:3:CL:1205:Municipal Services Digital Letter of Authorization</code> | TBA |
+| CANdy Production | [Municipal Services Digital Letter of Authorization](https://candyscan.digitaltrust.gov.bc.ca/tx/CANDY_PROD/domain/8118) | <code>R12pguaP3VF2WiE6vAsiPF:3:CL:8117:Municipal Services Digital Letter of Authorization</code> | [prod-municipal-services-digital-letter-of-authorization](https://github.com/bcgov/aries-oca-bundles/tree/main/OCABundles/schema/CityOfVancouver/prod-municipal-services-digital-letter-of-authorization) |
+| CANdy Test | [Municipal Services Digital Letter of Authorization](https://candyscan.digitaltrust.gov.bc.ca/tx/CANDY_TEST/domain/1207) | <code>ARK5s3QZtjL5X65mLoubdk:3:CL:1205:Municipal Services Digital Letter of Authorization</code> | [test-municipal-services-digital-letter-of-authorization](https://github.com/bcgov/aries-oca-bundles/tree/main/OCABundles/schema/CityOfVancouver/test-municipal-services-digital-letter-of-authorization) |
 | CANdy Dev | [Municipal Services Digital Letter of Authorization](https://candyscan.digitaltrust.gov.bc.ca/tx/CANDY_DEV/domain/39765) | <code>YWnESLB4SH275SMNvaJJ1L:3:CL:39764:Municipal Services Digital Letter of Authorization</code> | [dev-municipal-services-digital-letter-of-authorization](https://github.com/bcgov/aries-oca-bundles/tree/main/OCABundles/schema/CityOfVancouver/dev-municipal-services-digital-letter-of-authorization) |
 
 ## Appendix A: Glossary
